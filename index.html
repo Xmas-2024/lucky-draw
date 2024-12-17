@@ -199,7 +199,6 @@
           result.Items.forEach(function(item) {
             try {
               //console.log(item);
-              item.qty.N = 0
               id = "prize-" + item.id.S;
               document.getElementById(id).getElementsByClassName("prize-name")[0].innerHTML = item.name.S;
               total = document.getElementById(id).getElementsByClassName("remaining")[0].innerHTML.split("/")[1];
