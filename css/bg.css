@@ -3,47 +3,14 @@ body {
   display: flex;
 }
 
-.fa-star {
-  color: #0b364f;
-}
-
-.fa-sleigh {
-  color: #06223f;
-  transform: scale(-1, 1);
-}
-
-@keyframes up {
-  0% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(100px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes across {
-  from {
-    right: 0%;
-  }
-
-  to {
-    right: 150%;
-  }
-}
-
 .fa-snowflake {
   color: #ecf2f8;
 }
 
 .snow {
   width: 90vw;
-  height: 90vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
 }
 
 .snowflake {
@@ -222,7 +189,7 @@ body {
   animation-timing-function: linear, ease-in-out;
   animation-iteration-count: infinite, infinite;
   position: absolute;
-  right: 85%;
+  right: 5%;
   top: -100px;
   animation-delay: 1s, 2s;
   z-index: -1;
@@ -236,7 +203,7 @@ body {
   animation-timing-function: linear, ease-in-out;
   animation-iteration-count: infinite, infinite;
   position: absolute;
-  right: 90%;
+  right: 95%;
   top: -100px;
   animation-delay: 2s, 2s;
   z-index: -1;
