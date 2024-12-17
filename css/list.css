@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  z-index: 10;
   border: 1.3px solid #8c9dae;
 }
 
@@ -45,7 +46,7 @@
 
 .prize-cat-A, .prize-cat-A + div, .prize-cat-A + div + div {
   background-color: #E6E6E6;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .prize-cat-B, .prize-cat-B + div, .prize-cat-B + div + div {
