@@ -44,12 +44,12 @@
 }
 
 .prize-cat-A, .prize-cat-A + div, .prize-cat-A + div + div {
-  background-color: #C0C0C0;
+  background-color: #E6E6E6;
   opacity: 0.8;
 }
 
 .prize-cat-B, .prize-cat-B + div, .prize-cat-B + div + div {
-  background-color: #ff0000d6;
+  background-color: #CD7F32;
   opacity: 0.8;
 }
 
