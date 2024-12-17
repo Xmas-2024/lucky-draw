@@ -198,13 +198,16 @@
           result = JSON.parse(this.responseText);
           result.Items.forEach(function(item) {
             try {
-              console.log(item);
+              //console.log(item);
+              item.qty.N = 0
               id = "prize-" + item.id.S;
               document.getElementById(id).getElementsByClassName("prize-name")[0].innerHTML = item.name.S;
               total = document.getElementById(id).getElementsByClassName("remaining")[0].innerHTML.split("/")[1];
               document.getElementById(id).getElementsByClassName("remaining")[0].innerHTML = item.qty.N + "/" + total;
               if (parseInt(item.qty.N) == 0) {
                 document.getElementById(id).style.filter = "contrast(0.3)";
+              } else {
+                document.getElementById(id).style.filter = "contrast(1)";
               }
             } catch (e) {
               console.error("Error parsing item: ", e);
